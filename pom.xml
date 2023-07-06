@@ -11,7 +11,7 @@
             <artifactId>commons-lang3</artifactId>
             <version>3.5</version>
         </dependency>
-        <dependency>
+<!--         <dependency>
             <groupId>ome</groupId>
             <artifactId>formats-gpl</artifactId>
             <version>5.7.1</version>
@@ -24,7 +24,7 @@
                     <artifactId>*</artifactId>
                 </exclusion>
             </exclusions>
-        </dependency>
+        </dependency> -->
         <dependency>
             <groupId>com.zeroc</groupId>
             <artifactId>glacier2</artifactId>

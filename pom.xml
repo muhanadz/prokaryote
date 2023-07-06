@@ -12,20 +12,6 @@
             <version>3.5</version>
         </dependency>
         <dependency>
-            <groupId>ome</groupId>
-            <artifactId>formats-gpl</artifactId>
-            <version>5.7.1</version>
-            <exclusions>
-                <!-- Only has the side effect of rendering
-                     loci.formats.gui.CacheComponent inoperable.
-                -->
-                <exclusion>
-                    <groupId>com.jgoodies</groupId>
-                    <artifactId>*</artifactId>
-                </exclusion>
-            </exclusions>
-        </dependency>
-        <dependency>
             <groupId>com.zeroc</groupId>
             <artifactId>glacier2</artifactId>
             <version>3.6.5</version>

@@ -23,6 +23,10 @@
                     <groupId>com.jgoodies</groupId>
                     <artifactId>*</artifactId>
                 </exclusion>
+		<exclusion>
+                    <groupId>xml-apis</groupId>
+                    <artifactId>*</artifactId>
+                </exclusion>
             </exclusions>
         </dependency>
         <dependency>
@@ -33,7 +37,7 @@
         <dependency>
             <groupId>org.openmicroscopy</groupId>
             <artifactId>omero-blitz</artifactId>
-            <version>5.5.8</version>
+            <version>5.6.2</version>
             <!-- Exclusion list cribbed from https://github.com/glencoesoftware/omero-ms-core/blob/master/build.gradle -->
             <exclusions>
                 <exclusion>

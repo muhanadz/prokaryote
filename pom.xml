@@ -5,12 +5,12 @@
     <groupId>org.cellprofiler</groupId>
     <artifactId>prokaryote</artifactId>
     <version>2.4.4</version>
+    <configuration>
+      <ignoredClassPatterns>
+         <ignoredClassPattern>module-info</ignoredClassPattern>
+      </ignoredClassPatterns>
+    </configuration>
     <dependencies>
-        <dependency>
-            <groupId>org.apache.commons</groupId>
-            <artifactId>commons-lang3</artifactId>
-            <version>3.5</version>
-        </dependency>
         <dependency>
             <groupId>ome</groupId>
             <artifactId>formats-gpl</artifactId>

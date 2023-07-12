@@ -5,11 +5,6 @@
     <groupId>org.cellprofiler</groupId>
     <artifactId>prokaryote</artifactId>
     <version>2.4.4</version>
-    <banDuplicateClasses>
-     <ignoreClasses>
-      <ignoreClass>module-info</ignoreClass>
-      </ignoreClasses>
-    </banDuplicateClasses>
     <dependencies>
         <dependency>
             <groupId>ome</groupId>
@@ -353,6 +348,11 @@
                                 <exclude>org.glassfish:javax.json</exclude>
                             </excludes>
                         </enforceBytecodeVersion>
+			<banDuplicateClasses>
+			 <ignoreClasses>
+			  <ignoreClass>module-info</ignoreClass>
+			 </ignoreClasses>
+			</banDuplicateClasses>
                     </rules>
                 </configuration>
             </plugin>

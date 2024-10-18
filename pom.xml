@@ -7,20 +7,19 @@
     <version>2.4.4</version>
     <dependencies>
         <dependency>
-            <groupId>org.apache.commons</groupId>
-            <artifactId>commons-lang3</artifactId>
-            <version>3.5</version>
-        </dependency>
-        <dependency>
             <groupId>ome</groupId>
             <artifactId>formats-gpl</artifactId>
-            <version>5.7.1</version>
+            <version>6.11.0</version>
             <exclusions>
                 <!-- Only has the side effect of rendering
                      loci.formats.gui.CacheComponent inoperable.
                 -->
                 <exclusion>
                     <groupId>com.jgoodies</groupId>
+                    <artifactId>*</artifactId>
+                </exclusion>
+		<exclusion>
+                    <groupId>xml-apis</groupId>
                     <artifactId>*</artifactId>
                 </exclusion>
             </exclusions>
@@ -313,7 +312,7 @@
         <version>10.4.1</version>
     </parent>
     <properties>
-        <bio-formats.version>5.7.1</bio-formats.version>
+        <bio-formats.version>6.11.0</bio-formats.version>
     </properties>
     <build>
         <plugins>
@@ -349,6 +348,11 @@
                                 <exclude>org.glassfish:javax.json</exclude>
                             </excludes>
                         </enforceBytecodeVersion>
+			<banDuplicateClasses>
+			 <ignoreClasses>
+			  <ignoreClass>module-info</ignoreClass>
+			 </ignoreClasses>
+			</banDuplicateClasses>
                     </rules>
                 </configuration>
             </plugin>
